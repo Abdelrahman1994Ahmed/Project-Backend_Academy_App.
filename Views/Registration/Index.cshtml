@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Academy.Models.Registration>
+
+<h2>Registration Data for Developers</h2>
+
+<table class="table">
+
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Username</td>
+            <td>Number</td>
+            <td>E-mail</td>
+            <td>Date Of Birth</td>
+            <td>Password</td>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td> @item.Id</td>
+                <td> @item.Username</td>
+                <td> <span>0</span>@item.Number</td>
+                <td> @item.Email</td>
+                <td> @item.DateOfBirth</td>
+                <td> @item.Password</td>
+            </tr>
+        }
+
+    </tbody>
+
+</table>
